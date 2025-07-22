@@ -11,7 +11,25 @@ Large Language Models (LLMs) have shown promise in assisting developers with cod
 
 Please download the Stack Overflow data dump from [Archive.org Stack Exchange Data Dump](https://archive.org/details/stackexchange).
 
-Specifically, extract the `Posts.xml` file and place it **in the same directory as this project**.
+Specifically, extract the `Posts.xml` file and place it **in the same directory as this project (\datasets)**.
+
+The `datasets` folder contains the following notebooks:
+
+- **xmlProcessing_python_java_posts.ipynb**  
+  This script extracts **Java** and **Python** posts from the `Posts.xml` file.  
+  It pairs each **question** with its corresponding **accepted answer**, and performs **text cleaning** to prepare the data for downstream tasks.
+
+- **Embedding.ipynb**  
+  This notebook builds the **RAG knowledge dataset** by embedding the paired question-answer data.  
+  The generated file is:  
+  `CODE_POST_OVERALL-EMBEDDINGS_DATA_V3.pkl`  
+  This dataset will be used in the following research questions (RQs).
+
+- **Embedding_AnswerSentence.ipynb**  
+  This script embeds the **answer content at the sentence level**, to support experiments that require **sentence-level content granularity**.
+
+- **Embedding_Full_Answer.ipynb**  
+  This script embeds the **full answer content**, to support experiments using **full-answer granularity**.
 
 > **Note:**  
 > Due to the large file size, we do not upload intermediate processed files. These files will be generated automatically when you run the pipeline.
