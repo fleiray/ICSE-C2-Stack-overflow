@@ -10,8 +10,8 @@ Large Language Models (LLMs) have shown promise in assisting developers with cod
 ## Extract and process Stack overflow dump
 
 TODO: mention the stack overflow data dump and the intermidate files name during running because too large to upload
-## Cleaning/Splitting/Embedding
-## Pipelines (RQ1)
-## Unseen testing (RQ2)
-## Applying to different model (RQ3)
-## Data (LLM-as-Judge results, manaul evalution results, implication results)
+
+## RQ1: Which retrieval approach configurations yield the highest response quality in LLM-generated answers?
+## RQ2: How well does adaptive HyDE retrieval perform on novel questions outside the training corpus?
+## RQ3: How does our proposed RAG pipeline perform across different LLMs?
+## Extra
