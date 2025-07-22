@@ -7,9 +7,16 @@ Large Language Models (LLMs) have shown promise in assisting developers with cod
 ![Experimental Workflow](images/Overall_Workflow.PNG)
 
 
-## Extract and process Stack overflow dump
+## Extract and Process Stack Overflow Dump
 
-TODO: mention the stack overflow data dump and the intermidate files name during running because too large to upload
+Please download the Stack Overflow data dump from [Archive.org Stack Exchange Data Dump](https://archive.org/details/stackexchange).
+
+Specifically, extract the `Posts.xml` file and place it **in the same directory as this project**.
+
+> **Note:**  
+> Due to the large file size, we do not upload intermediate processed files. These files will be generated automatically when you run the pipeline.
+
+
 
 ## RQ1: Which retrieval approach configurations yield the highest response quality in LLM-generated answers?
 ## RQ2: How well does adaptive HyDE retrieval perform on novel questions outside the training corpus?
