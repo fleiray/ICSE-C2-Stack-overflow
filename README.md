@@ -8,6 +8,8 @@ Large Language Models (LLMs) have shown promise in assisting developers with cod
 
 
 ## Extract and process Stack overflow dump
+
+TODO: mention the stack overflow data dump and the intermidate files name during running because too large to upload
 ## Cleaning/Splitting/Embedding
 ## Pipelines (RQ1)
 ## Unseen testing (RQ2)
